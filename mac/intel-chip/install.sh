@@ -67,7 +67,7 @@ echo "source <(kubectl completion zsh)" >> ~/.zshrc
 source ~/.zshrc
 
 ## sternのインストール　
-### k8s pod logツール 
+### k8s pod logツール
 brew install stern
 
 ## k9sのインストール

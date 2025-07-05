@@ -6,6 +6,8 @@ killall Finder
 # 基本構成
 ## Homebrewのインストール
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/$(whoami)/.zprofile
+. /Users/$(whoami)/.zprofile
 
 ## Homebrewのアップデート
 brew update
@@ -59,6 +61,9 @@ brew install minikube
 ## Helmのインストール
 brew install --cask helm
 
+## Redis Desktop Manager
+brew install --cask another-redis-desktop-manager
+
 ## jqのインストール
 brew install jq
 
@@ -67,7 +72,7 @@ echo "source <(kubectl completion zsh)" >> ~/.zshrc
 source ~/.zshrc
 
 ## sternのインストール　
-### k8s pod logツール 
+### k8s pod logツール
 brew install stern
 
 ## k9sのインストール
